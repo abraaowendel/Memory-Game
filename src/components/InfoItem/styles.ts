@@ -6,6 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Label = styled.div`
+    margin: 5px 0;
     font-size: 15px;
     color: #6A7D88;
 `;

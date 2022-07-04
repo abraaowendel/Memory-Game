@@ -19,15 +19,6 @@ export const Info = styled.div`
     align-items: center;
   }
 `;
-export const GridArea = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  @media screen and (max-width: 750px){
-    justify-content: center;
-    margin: 0 20px;
-  }
-`;
 export const LogoLink = styled.a`
     display: block;
 `;
@@ -40,9 +31,22 @@ export const InfoArea = styled.div`
     text-align: center;
   }
 `;
+export const GridArea = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000;
 
-export const Button = styled.button`
-  cursor: pointer;
+  @media screen and (max-width: 750px){
+    justify-content: center;
+    margin: 0 20px;
+  }
 `;
-
+export const Grid = styled.div`
+  width: 430px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  background-color: #fff;
+`;
 
