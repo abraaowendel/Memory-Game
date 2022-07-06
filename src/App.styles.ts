@@ -6,6 +6,7 @@ export const Container = styled.div`
   max-width: 900px;
   margin: auto;
   display: flex;
+  justify-content: space-evenly;
   @media screen and (max-width: 750px){
     flex-direction: column;
   }
@@ -35,7 +36,6 @@ export const GridArea = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  background-color: #000;
 
   @media screen and (max-width: 750px){
     justify-content: center;
@@ -43,10 +43,13 @@ export const GridArea = styled.div`
   }
 `;
 export const Grid = styled.div`
-  width: 430px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 10px;
-  background-color: #fff;
+  
+  @media screen and (max-width: 750px){
+    grid-template-columns: repeat(3,1fr);
+
+  }
 `;
 
